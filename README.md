@@ -31,7 +31,12 @@ http://localhost:8983/solr/#/notes_core/query
 
 ## TODO
 
-TODO
+I have a lot more to dig out: tags and time estimates and the ones
+that immediately come to mind.
+
+Also, I'd like a simpler search interface, more like the demo of
+lunrjs (which is what got me started down this path in the first
+place).
 
 ## Notes
 
