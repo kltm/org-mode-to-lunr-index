@@ -94,6 +94,12 @@ def main():
         day = None
         day_blob_lines = day_blob.split('\n')
         day = day_blob_lines[0]
+
+        ## Clean day, if necessary, as I use multiple formats.
+        if re.match(r'\<', day):
+            day = day[0:10] # get rid of task count at end
+            day = ''.join(c for c in day if c.isdigit())
+
         ## Continue "trick" as above.
         day_blob_wo_date = "\n".join(day_blob_lines[1:])
 
